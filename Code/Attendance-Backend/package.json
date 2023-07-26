@@ -1,0 +1,40 @@
+{
+  "name": "dbms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js --delay 1500ms"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "csv-parser": "^2.3.3",
+    "csvtojson": "^2.0.10",
+    "debug": "^2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "fast-csv": "^4.3.6",
+    "follow-redirects": "^1.10.0",
+    "http-errors": "^1.6.3",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "package.json": "^2.0.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "require": "^2.4.20",
+    "winston": "^3.2.1"
+  }
+}

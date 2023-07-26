@@ -1,0 +1,17 @@
+.btn {
+    text-transform: capitalize !important;
+    width: 200px;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+    height: 100px;
+}
+#defaultFormCardNameEx::placeholder {
+    color: #bac0bd;
+}
