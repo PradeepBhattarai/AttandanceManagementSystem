@@ -14,7 +14,7 @@ const database_config ={
   database: databaseName,
   dateStrings:true
 
-
+  
 }
 
 module.exports.databaseConfig = database_config;

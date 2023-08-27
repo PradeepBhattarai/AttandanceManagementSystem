@@ -1,0 +1,28 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      NODE_ENV: production
+      # Other environment variables
+
+  admin-site:
+    build:
+      context: .
+      dockerfile: ./admin-site/Dockerfile
+    ports:
+      - "3000:80"  # Adjust port as needed
+
+  client-site:
+    build:
+      context: .
+      dockerfile: ./client-site/Dockerfile
+    ports:
+      - "3001:80"  # Adjust port as needed
+
+  # Add database container here if not hosted externally
+
