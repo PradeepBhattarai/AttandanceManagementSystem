@@ -1,18 +1,20 @@
-FROM node:12 AS Production
+# Use an official Node.js runtime as the base image (version 12)
+FROM node:12
 
-ENV NODE_ENV=production 
+# Set the working directory inside the container
+WORKDIR /usr/src/app
 
-WORKDIR /usr/src/server
+# Copy package.json and package-lock.json to the container
+COPY package*.json ./
 
-COPY package.json .
-COPY package-lock.json .
-
+# Install app dependencies
 RUN npm install
 
-COPY . . 
+# Copy the rest of your application code into the container
+COPY . .
 
-RUN npm run build
-
+# Expose the port your app will run on
 EXPOSE 5000
 
+# Start your Node.js app with nodemon
 CMD ["npm", "start"]
